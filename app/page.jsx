@@ -1,8 +1,10 @@
 import { Heading, Card, GridDesign } from "@/components";
 
 const data = [
-  { title: "Micro interactions", link: "/micro-interaction" },
-  { title: "Scroll animation", link: "scroll-animation" },
+  { title: "Miscellanous", link: "/misc" },
+  { title: "Idan", link: "/idan" },
+  { title: "", link: "" },
+  
 ];
 
 export default function Page() {

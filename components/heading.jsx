@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Heading({ title = "Hi" }) {
+export default function Heading({ title }) {
   const pathname = usePathname();
   return (
     <header className="my-4 mt-8">
@@ -15,7 +15,7 @@ export default function Heading({ title = "Hi" }) {
           </p>
         </Link>
       )}
-      <p className="text-5xl font-semibold">{title} </p>
+      {title && <p className="text-5xl font-semibold">{title} </p>}
     </header>
   );
 }
